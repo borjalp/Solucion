@@ -1,0 +1,75 @@
+<!doctype html> 
+<html lang="en"> 
+<head> 
+	<meta charset="UTF-8" />
+    <title>Juego Conquista</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="lib/phaser.min.js"></script>   
+</head>
+
+<!-- ESTRUCTURA DE LA PANTALLA -->
+<body>
+<!-- BARRA DE NAVEGACION TOP -->
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#BarraNavegacion">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        
+      </button>
+      <a class="navbar-brand" href="#">Conquista Niveles</a>
+    </div>
+    <div class="collapse navbar-collapse" id="BarraNavegacion">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Inicio</a></li>
+        <li><a href="#">Resultados</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Reiniciar</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- BARRA DE NAVEGACION TOP -->
+
+<div class="container-fluid">
+
+ <div class="espacio izquierda">
+    <div class="col-sm-2 ">
+         <div id="control"></div> 
+    </div>
+</div>
+
+<div class="espacio central">
+    <div class="col-sm-8">
+        <div id="juegoId"></div>
+    </div>
+</div>
+
+<div class="espacio derecha">
+    <div class="col-sm-2">
+        <div id="ParticipantesJuego">
+          <h1>Participantes</h1>
+          <p>Aquí saldran los participantes de la partida
+          </p>
+        </div>  
+    </div>
+</div>
+
+</div>
+<footer class="container-fluid text-center">
+  <h1>ESPACIO PARA POSIBLE PUBLICIDAD</h1>
+</footer>
+
+<script src="js/juego_clase.js"></script>
+<script src="js/control-juego.js"></script>
+<script>
+    inicio();
+</script>
+</body>
+</html>
