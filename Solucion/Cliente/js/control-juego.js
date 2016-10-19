@@ -1,5 +1,7 @@
 
-var url="http://127.0.0.1:1338/";
+//var url="http://127.0.0.1:1338/";
+var url="https://meteorsrainmurderers.herokuapp.com/";
+
 var game;
 
 //Funciones que modifican el index
